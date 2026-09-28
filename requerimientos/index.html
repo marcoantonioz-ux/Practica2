@@ -2,121 +2,309 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <title>Mensajes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Mensajes - SegundaOportunidAPP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Centro de mensajes</h1>
-    <p>Comunícate con compradores, vendedores
-       y donadores.</p>
+    <main class="container py-5">
 
-    <hr>
+        <!-- ENCABEZADO -->
+        <div class="mb-5">
 
-    <h2>Conversaciones</h2>
+            <h1 class="fw-bold">
+                Centro de mensajes
+            </h1>
 
-    <ul>
-        <li>
-            <a href="#chat1">Juan Pérez - Comprador</a>
-            <p>Publicación: Bicicleta usada</p>
-        </li>
-        <li>
-            <a href="#chat2">María López - Vendedora</a>
-            <p>Publicación: Laptop</p>
-        </li>
-        <li>
-            <a href="#chat3">Carlos Ruiz - Donador</a>
-            <p>Publicación: Ropa en buen estado</p>
-        </li>
-    </ul>
+            <p class="lead">
+                Comunícate con compradores, vendedores y donadores.
+            </p>
 
-    <hr>
+        </div>
 
-    <section id="chat1">
-        <h2>Chat con Juan Pérez</h2>
-        <p>Rol: Comprador</p>
-        <p>Publicación: Bicicleta usada</p>
 
-        <hr>
+        <!-- CONVERSACIONES -->
+        <section>
 
-        <p><strong>Juan:</strong> Hola, ¿todavía
-           está disponible la bicicleta?</p>
+            <h2 class="fw-semibold mb-4">
+                Conversaciones
+            </h2>
 
-        <p><strong>Tú:</strong> Sí, todavía
-           está disponible.</p>
+            <div class="list-group mb-5">
 
-        <p><strong>Juan:</strong> ¿Dónde podemos
-           acordar la entrega?</p>
+                <!-- JUAN -->
+                <a href="#chat1"
+                   class="list-group-item list-group-item-action p-3 conversation">
 
-        <form>
-            <label for="mensaje1">
-                Escribe un mensaje:
-            </label><br>
+                    <div class="d-flex justify-content-between align-items-center">
 
-            <textarea id="mensaje1"
-                      rows="4" cols="40"
-                      placeholder="Escribe aquí..."></textarea>
-            <br><br>
+                        <h5 class="mb-1">
+                            Juan Pérez - Comprador
+                        </h5>
 
-            <button type="submit">
-                Enviar mensaje
-            </button>
-        </form>
-    </section>
+                        <span class="badge badge-comprador">
+                            Comprador
+                        </span>
 
-    <hr>
+                    </div>
 
-    <section id="chat2">
-        <h2>Chat con María López</h2>
-        <p>Rol: Vendedora</p>
-        <p>Publicación: Laptop</p>
+                    <p class="mb-0 text-muted">
+                        Publicación: Bicicleta usada
+                    </p>
 
-        <p><strong>María:</strong> Hola, tengo
-           disponible la laptop.</p>
+                </a>
 
-        <form>
-            <label for="mensaje2">
-                Escribe un mensaje:
-            </label><br>
 
-            <textarea id="mensaje2"
-                      rows="4" cols="40"
-                      placeholder="Escribe aquí..."></textarea>
-            <br><br>
+                <!-- MARÍA -->
+                <a href="#chat2"
+                   class="list-group-item list-group-item-action p-3 conversation">
 
-            <button type="submit">
-                Enviar mensaje
-            </button>
-        </form>
-    </section>
+                    <div class="d-flex justify-content-between align-items-center">
 
-    <hr>
+                        <h5 class="mb-1">
+                            María López - Vendedora
+                        </h5>
 
-    <section id="chat3">
-        <h2>Chat con Carlos Ruiz</h2>
-        <p>Rol: Donador</p>
-        <p>Publicación: Ropa en buen estado</p>
+                        <span class="badge badge-vendedora">
+                            Vendedora
+                        </span>
 
-        <p><strong>Carlos:</strong> Me interesa
-           donar la ropa publicada.</p>
+                    </div>
 
-        <form>
-            <label for="mensaje3">
-                Escribe un mensaje:
-            </label><br>
+                    <p class="mb-0 text-muted">
+                        Publicación: Laptop
+                    </p>
 
-            <textarea id="mensaje3"
-                      rows="4" cols="40"
-                      placeholder="Escribe aquí..."></textarea>
-            <br><br>
+                </a>
 
-            <button type="submit">
-                Enviar mensaje
-            </button>
-        </form>
-    </section>
+
+                <!-- CARLOS -->
+                <a href="#chat3"
+                   class="list-group-item list-group-item-action p-3 conversation">
+
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <h5 class="mb-1">
+                            Carlos Ruiz - Donador
+                        </h5>
+
+                        <span class="badge badge-donador">
+                            Donador
+                        </span>
+
+                    </div>
+
+                    <p class="mb-0 text-muted">
+                        Publicación: Ropa en buen estado
+                    </p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHAT JUAN -->
+        <section id="chat1" class="card mb-4 shadow-sm chat-card">
+
+            <div class="card-body p-4">
+
+                <h2 class="card-title fw-semibold">
+                    Chat con Juan Pérez
+                </h2>
+
+                <p class="text-muted mb-1">
+                    Rol: Comprador
+                </p>
+
+                <p class="text-muted mb-4">
+                    Publicación: Bicicleta usada
+                </p>
+
+                <div class="border rounded p-3 mb-3 message-box">
+
+                    <p class="mb-2">
+                        <strong class="text-donador">
+                            Juan:
+                        </strong>
+                        Hola, ¿todavía está disponible la bicicleta?
+                    </p>
+
+                    <p class="mb-2">
+                        <strong class="text-comprador">
+                            Tú:
+                        </strong>
+                        Sí, todavía está disponible.
+                    </p>
+
+                    <p class="mb-0">
+                        <strong class="text-donador">
+                            Juan:
+                        </strong>
+                        ¿Dónde podemos acordar la entrega?
+                    </p>
+
+                </div>
+
+                <form>
+
+                    <div class="mb-3">
+
+                        <label for="mensaje1"
+                               class="form-label fw-semibold">
+                            Escribe un mensaje:
+                        </label>
+
+                        <textarea id="mensaje1"
+                                  class="form-control message-input"
+                                  rows="4"
+                                  placeholder="Escribe aquí..."></textarea>
+
+                    </div>
+
+                    <button type="submit"
+                            class="btn text-white send-button">
+                        Enviar mensaje
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHAT MARÍA -->
+        <section id="chat2" class="card mb-4 shadow-sm chat-card">
+
+            <div class="card-body p-4">
+
+                <h2 class="card-title fw-semibold">
+                    Chat con María López
+                </h2>
+
+                <p class="text-muted mb-1">
+                    Rol: Vendedora
+                </p>
+
+                <p class="text-muted mb-4">
+                    Publicación: Laptop
+                </p>
+
+                <div class="border rounded p-3 mb-3 message-box">
+
+                    <p class="mb-0">
+
+                        <strong class="text-vendedora">
+                            María:
+                        </strong>
+
+                        Hola, tengo disponible la laptop.
+
+                    </p>
+
+                </div>
+
+                <form>
+
+                    <div class="mb-3">
+
+                        <label for="mensaje2"
+                               class="form-label fw-semibold">
+                            Escribe un mensaje:
+                        </label>
+
+                        <textarea id="mensaje2"
+                                  class="form-control message-input"
+                                  rows="4"
+                                  placeholder="Escribe aquí..."></textarea>
+
+                    </div>
+
+                    <button type="submit"
+                            class="btn text-white send-button">
+                        Enviar mensaje
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHAT CARLOS -->
+        <section id="chat3" class="card mb-4 shadow-sm chat-card">
+
+            <div class="card-body p-4">
+
+                <h2 class="card-title fw-semibold">
+                    Chat con Carlos Ruiz
+                </h2>
+
+                <p class="text-muted mb-1">
+                    Rol: Donador
+                </p>
+
+                <p class="text-muted mb-4">
+                    Publicación: Ropa en buen estado
+                </p>
+
+                <div class="border rounded p-3 mb-3 message-box">
+
+                    <p class="mb-0">
+
+                        <strong class="text-donador">
+                            Carlos:
+                        </strong>
+
+                        Me interesa donar la ropa publicada.
+
+                    </p>
+
+                </div>
+
+                <form>
+
+                    <div class="mb-3">
+
+                        <label for="mensaje3"
+                               class="form-label fw-semibold">
+                            Escribe un mensaje:
+                        </label>
+
+                        <textarea id="mensaje3"
+                                  class="form-control message-input"
+                                  rows="4"
+                                  placeholder="Escribe aquí..."></textarea>
+
+                    </div>
+
+                    <button type="submit"
+                            class="btn text-white send-button">
+                        Enviar mensaje
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
 
 </body>
 </html>

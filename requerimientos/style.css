@@ -1,0 +1,223 @@
+/* =========================================
+   SegundaOportunidAPP
+   Estilos - Centro de mensajes
+   ========================================= */
+
+
+/* -------------------------
+   VARIABLES DE COLOR
+   ------------------------- */
+
+:root {
+    --color-accion: #D96281;
+    --color-menu: #499EBF;
+    --color-fondo: #F2E8D5;
+    --color-iconos: #A4A66A;
+    --color-bordes: #6ACED9;
+}
+
+
+/* -------------------------
+   ESTILOS GENERALES
+   ------------------------- */
+
+body {
+    background-color: var(--color-fondo);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #212529;
+}
+
+
+/* -------------------------
+   TIPOGRAFÍA
+   ------------------------- */
+
+/* Título principal - Roboto Bold 32px */
+h1 {
+    color: var(--color-accion);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Encabezados - Roboto Medium 20px */
+h2 {
+    color: var(--color-menu);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Títulos secundarios */
+h5 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Texto normal - Roboto Regular 16px */
+p {
+    font-size: 16px;
+}
+
+/* Texto secundario - 14px */
+.text-muted {
+    font-size: 14px;
+}
+
+
+/* -------------------------
+   CONVERSACIONES
+   ------------------------- */
+
+.conversation {
+    border-color: var(--color-bordes);
+    background-color: #FFFFFF;
+}
+
+.conversation:hover {
+    border-color: var(--color-menu);
+}
+
+
+/* -------------------------
+   ETIQUETAS DE ROLES
+   ------------------------- */
+
+.badge-comprador {
+    background-color: var(--color-accion);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.badge-vendedora {
+    background-color: var(--color-menu);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.badge-donador {
+    background-color: var(--color-iconos);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* -------------------------
+   TARJETAS DE CHAT
+   ------------------------- */
+
+.chat-card {
+    border-color: var(--color-bordes);
+    background-color: #FFFFFF;
+}
+
+.chat-card h2 {
+    color: var(--color-menu);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* -------------------------
+   ÁREA DE MENSAJES
+   ------------------------- */
+
+.message-box {
+    border-color: var(--color-bordes) !important;
+    background-color: #FFFFFF;
+}
+
+
+/* -------------------------
+   NOMBRES DE USUARIOS
+   ------------------------- */
+
+.text-donador {
+    color: var(--color-iconos);
+    font-weight: 500;
+}
+
+.text-comprador {
+    color: var(--color-accion);
+    font-weight: 500;
+}
+
+.text-vendedora {
+    color: var(--color-menu);
+    font-weight: 500;
+}
+
+
+/* -------------------------
+   CAMPOS DE TEXTO
+   ------------------------- */
+
+.message-input {
+    border-color: var(--color-bordes);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.message-input:focus {
+    border-color: var(--color-menu);
+    box-shadow: 0 0 0 0.2rem rgba(73, 158, 191, 0.25);
+}
+
+
+/* -------------------------
+   ETIQUETAS DE FORMULARIO
+   ------------------------- */
+
+.form-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* -------------------------
+   BOTONES
+   ------------------------- */
+
+.send-button {
+    background-color: var(--color-accion);
+    border-color: var(--color-accion);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.send-button:hover {
+    background-color: #c45170;
+    border-color: #c45170;
+}
+
+
+/* -------------------------
+   DISEÑO RESPONSIVO
+   ------------------------- */
+
+/* Dispositivos móviles */
+
+@media (max-width: 576px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .conversation {
+        padding: 16px !important;
+    }
+
+    .chat-card .card-body {
+        padding: 24px !important;
+    }
+
+}
